@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PK Unit Converter – Free Online Unit Conversion Tool</title>
+  <meta name="description" content="PK Unit Converter is a free, fast and accurate online unit conversion tool. Convert length, weight, temperature, area, volume, speed, time, data and height instantly." />
+  <meta name="keywords" content="unit converter, online converter, length converter, weight converter, temperature converter, Pakistan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="index.html" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="PK Unit Converter – Free Online Unit Conversion Tool" />
+  <meta property="og:description" content="Free, fast, and accurate online unit converter for length, weight, temperature, area, volume, speed, time, data and height." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="index.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="site-header"></div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero section">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Pakistan's #1 Free<br><span>Unit Converter</span></h1>
+      <p class="hero-sub">Instantly convert length, weight, temperature, area, volume, speed, time, data and height. Fast, accurate and mobile-friendly.</p>
+      <div class="hero-badges">
+        <span class="badge">✅ 9 Categories</span>
+        <span class="badge">⚡ Instant Results</span>
+        <span class="badge">📱 Mobile Friendly</span>
+        <span class="badge">🆓 100% Free</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONVERTER CARD -->
+<section aria-label="Main converter" style="padding-bottom:64px;">
+  <div class="container">
+    <div class="converter-card">
+      <h2>Quick Converter</h2>
+      <div class="converter-tabs" role="tablist" aria-label="Converter categories">
+        <button class="conv-tab active" data-target="panel-length"      role="tab" aria-selected="true">📏 Length</button>
+        <button class="conv-tab"        data-target="panel-weight"      role="tab">⚖️ Weight</button>
+        <button class="conv-tab"        data-target="panel-temperature" role="tab">🌡️ Temp</button>
+        <button class="conv-tab"        data-target="panel-area"        role="tab">📐 Area</button>
+        <button class="conv-tab"        data-target="panel-volume"      role="tab">🧪 Volume</button>
+        <button class="conv-tab"        data-target="panel-speed"       role="tab">🚀 Speed</button>
+        <button class="conv-tab"        data-target="panel-time"        role="tab">⏰ Time</button>
+        <button class="conv-tab"        data-target="panel-data"        role="tab">💾 Data</button>
+        <button class="conv-tab"        data-target="panel-height"      role="tab">📊 Height</button>
+      </div>
+
+      <!-- Length Panel -->
+      <div class="conv-panel active" id="panel-length" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="li-length">Value</label>
+            <input type="number" id="li-length" class="conv-input" placeholder="Enter value" aria-label="Value to convert" />
+          </div>
+          <div class="form-group">
+            <label for="lf-length">From</label>
+            <select id="lf-length" class="conv-from" aria-label="From unit"></select>
+          </div>
+          <div class="form-group">
+            <label for="lt-length">To</label>
+            <select id="lt-length" class="conv-to" aria-label="To unit"></select>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn" aria-label="Convert length">Convert</button>
+          <button class="btn btn-secondary conv-reset" aria-label="Reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite">
+          <div class="result-value"></div>
+          <div class="result-label"></div>
+          <div class="result-formula"></div>
+        </div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Weight Panel -->
+      <div class="conv-panel" id="panel-weight" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="li-weight">Value</label>
+            <input type="number" id="li-weight" class="conv-input" placeholder="Enter value" />
+          </div>
+          <div class="form-group">
+            <label for="lf-weight">From</label>
+            <select id="lf-weight" class="conv-from"></select>
+          </div>
+          <div class="form-group">
+            <label for="lt-weight">To</label>
+            <select id="lt-weight" class="conv-to"></select>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Temperature Panel -->
+      <div class="conv-panel" id="panel-temperature" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="li-temp">Value</label>
+            <input type="number" id="li-temp" class="conv-input" placeholder="Enter value" />
+          </div>
+          <div class="form-group">
+            <label for="lf-temp">From</label>
+            <select id="lf-temp" class="conv-from"></select>
+          </div>
+          <div class="form-group">
+            <label for="lt-temp">To</label>
+            <select id="lt-temp" class="conv-to"></select>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Area Panel -->
+      <div class="conv-panel" id="panel-area" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Volume Panel -->
+      <div class="conv-panel" id="panel-volume" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Speed Panel -->
+      <div class="conv-panel" id="panel-speed" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Time Panel -->
+      <div class="conv-panel" id="panel-time" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Data Panel -->
+      <div class="conv-panel" id="panel-data" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <!-- Height Panel -->
+      <div class="conv-panel" id="panel-height" role="tabpanel">
+        <div class="form-row">
+          <div class="form-group"><label>Value</label><input type="number" class="conv-input" placeholder="Enter value" /></div>
+          <div class="form-group"><label>From</label><select class="conv-from"></select></div>
+          <div class="form-group"><label>To</label><select class="conv-to"></select></div>
+        </div>
+        <div class="btn-row"><button class="btn btn-primary conv-btn">Convert</button><button class="btn btn-secondary conv-reset">Reset</button></div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+    </div><!-- /converter-card -->
+  </div>
+</section>
+
+<!-- CONVERTER CATEGORIES -->
+<section class="section" style="background:var(--bg-light);" aria-labelledby="cat-heading">
+  <div class="container">
+    <h2 class="section-title" id="cat-heading">All Converter Categories</h2>
+    <p class="section-subtitle">Choose from our 9 comprehensive measurement converter categories</p>
+    <div class="categories-grid">
+      <a href="length.html" class="category-card">
+        <div class="category-icon" style="background:#e8f5ee;">📏</div>
+        <h3>Length</h3><p>km, m, cm, mile, foot…</p>
+      </a>
+      <a href="weight.html" class="category-card">
+        <div class="category-icon" style="background:#fff8e6;">⚖️</div>
+        <h3>Weight</h3><p>kg, g, lb, oz…</p>
+      </a>
+      <a href="temperature.html" class="category-card">
+        <div class="category-icon" style="background:#fef0f0;">🌡️</div>
+        <h3>Temperature</h3><p>°C, °F, K</p>
+      </a>
+      <a href="area.html" class="category-card">
+        <div class="category-icon" style="background:#f0f4ff;">📐</div>
+        <h3>Area</h3><p>m², km², ft², acre…</p>
+      </a>
+      <a href="volume.html" class="category-card">
+        <div class="category-icon" style="background:#f0fffe;">🧪</div>
+        <h3>Volume</h3><p>L, mL, gallon, m³…</p>
+      </a>
+      <a href="speed.html" class="category-card">
+        <div class="category-icon" style="background:#fdf0ff;">🚀</div>
+        <h3>Speed</h3><p>km/h, m/s, mph, knot</p>
+      </a>
+      <a href="time.html" class="category-card">
+        <div class="category-icon" style="background:#fff8e6;">⏰</div>
+        <h3>Time</h3><p>sec, min, hour, day…</p>
+      </a>
+      <a href="data.html" class="category-card">
+        <div class="category-icon" style="background:#e8f0fe;">💾</div>
+        <h3>Data Storage</h3><p>Byte, KB, MB, GB, TB</p>
+      </a>
+      <a href="height.html" class="category-card">
+        <div class="category-icon" style="background:#e8f5ee;">📊</div>
+        <h3>Height</h3><p>cm, m, foot, inch</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES / WHY CHOOSE US -->
+<section class="section" aria-labelledby="why-heading">
+  <div class="container">
+    <h2 class="section-title" id="why-heading">Why Choose PK Unit Converter?</h2>
+    <p class="section-subtitle">We built this tool for everyday Pakistanis who need quick, reliable measurement conversions</p>
+    <div class="grid-4">
+      <div class="card feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Results</h3>
+        <p>Get your conversion results in milliseconds. No loading, no waiting — just type and convert.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">✅</div>
+        <h3>100% Accurate</h3>
+        <p>All conversion formulas are based on international standards to ensure maximum accuracy.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>Works perfectly on phones, tablets and desktops. No app download needed — use it anywhere.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">🆓</div>
+        <h3>Completely Free</h3>
+        <p>PK Unit Converter is 100% free with no hidden charges, registration, or subscription required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR CONVERSIONS -->
+<section class="section" style="background:var(--bg-light);" aria-labelledby="popular-heading">
+  <div class="container">
+    <h2 class="section-title" id="popular-heading">Popular Conversions</h2>
+    <p class="section-subtitle">Quick access to the most frequently used conversions</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;">📏 Length</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;">
+          <li><a href="length.html">Meter to Foot →</a></li>
+          <li><a href="length.html">Kilometer to Mile →</a></li>
+          <li><a href="length.html">Centimeter to Inch →</a></li>
+          <li><a href="length.html">Meter to Yard →</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;">⚖️ Weight</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;">
+          <li><a href="weight.html">Kilogram to Pound →</a></li>
+          <li><a href="weight.html">Gram to Ounce →</a></li>
+          <li><a href="weight.html">Kilogram to Gram →</a></li>
+          <li><a href="weight.html">Pound to Kilogram →</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--primary);margin-bottom:14px;">🌡️ Temperature</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;">
+          <li><a href="temperature.html">Celsius to Fahrenheit →</a></li>
+          <li><a href="temperature.html">Fahrenheit to Celsius →</a></li>
+          <li><a href="temperature.html">Celsius to Kelvin →</a></li>
+          <li><a href="temperature.html">Kelvin to Celsius →</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section" aria-labelledby="stats-heading">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="card stat-card"><div class="stat-number">9</div><div class="stat-label">Converter Categories</div></div>
+      <div class="card stat-card"><div class="stat-number">40+</div><div class="stat-label">Supported Units</div></div>
+      <div class="card stat-card"><div class="stat-number">100%</div><div class="stat-label">Free to Use</div></div>
+      <div class="card stat-card"><div class="stat-number">⚡</div><div class="stat-label">Instant Results</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ PREVIEW -->
+<section class="section" style="background:var(--bg-light);" aria-labelledby="faq-preview-heading">
+  <div class="container">
+    <h2 class="section-title" id="faq-preview-heading">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Quick answers to common questions about unit conversion</p>
+    <div class="faq-list" style="max-width:780px;margin:0 auto 32px;">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is PK Unit Converter free to use? <span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">Yes, PK Unit Converter is completely free. There are no subscriptions, no hidden charges, and no registration required. Simply visit the website and start converting measurements instantly.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How accurate are the conversions? <span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">All conversions are based on internationally accepted standards and formulas. We use standard SI unit conversion factors to ensure maximum accuracy for scientific and everyday use.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Which unit categories are supported? <span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer">We support 9 categories: Length, Weight/Mass, Temperature, Area, Volume, Speed, Time, Data Storage, and Height. Each category includes the most commonly used units.</div>
+      </div>
+    </div>
+    <div style="text-align:center;"><a href="faq.html" class="btn btn-primary">View All FAQs</a></div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="section" aria-labelledby="blog-preview-heading">
+  <div class="container">
+    <h2 class="section-title" id="blog-preview-heading">Latest from Our Blog</h2>
+    <p class="section-subtitle">Tips, guides and useful information about measurement and unit conversion</p>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-img">📏</div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-tag">Length</span><span>August 2026</span></div>
+          <h3><a href="blog-details.html">Understanding the Metric System: A Beginner's Guide</a></h3>
+          <p>The metric system is the international standard for measurement. Learn how it works and why it matters in everyday life.</p>
+          <a href="blog-details.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img" style="background:linear-gradient(135deg,#c98600,#f4a300);">⚖️</div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-tag">Weight</span><span>August 2026</span></div>
+          <h3><a href="blog.html">Kilograms vs Pounds: Which System Should You Use?</a></h3>
+          <p>A comparison of the metric and imperial weight systems, and when to use each in daily life and professional settings.</p>
+          <a href="blog.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img" style="background:linear-gradient(135deg,#c0392b,#e74c3c);">🌡️</div>
+        <div class="blog-body">
+          <div class="blog-meta"><span class="blog-tag">Temperature</span><span>July 2026</span></div>
+          <h3><a href="blog.html">Celsius vs Fahrenheit: A Complete Conversion Guide</a></h3>
+          <p>Everything you need to know about converting between Celsius, Fahrenheit and Kelvin with practical examples.</p>
+          <a href="blog.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:36px;"><a href="blog.html" class="btn btn-primary">View All Posts</a></div>
+  </div>
+</section>
+
+<!-- USEFUL INFO -->
+<section class="section" style="background:var(--bg-light);" aria-labelledby="info-heading">
+  <div class="container" style="max-width:860px;">
+    <h2 class="section-title" id="info-heading">About Unit Conversion</h2>
+    <p>Unit conversion is the process of converting a quantity expressed in one unit of measurement to an equivalent value in a different unit. This is an essential skill used across science, engineering, cooking, construction, and everyday life. Whether you are measuring the distance between two cities, weighing ingredients for a recipe, or comparing international clothing sizes, unit conversion is always relevant.</p>
+    <p>In Pakistan, both the metric system and traditional local units are used in different contexts. For instance, property is often measured in Marla, Kanal, or Acre, while temperature forecasts typically use Celsius. PK Unit Converter bridges these needs by providing fast, reliable conversions across all major measurement categories.</p>
+    <p>Our conversion tools are built with accuracy as the top priority. All formulas are sourced from international standards bodies including the International System of Units (SI). We handle edge cases like very large and very small numbers gracefully, displaying results in scientific notation when appropriate.</p>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="about.html" class="btn btn-primary" style="margin-right:12px;">Learn More About Us</a>
+      <a href="categories.html" class="btn btn-secondary">Browse All Converters</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <h2 id="cta-heading">Ready to Convert?</h2>
+    <p>Start using PK Unit Converter right now — no registration, no downloads, completely free.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-white btn-lg">Start Converting Now</a>
+      <a href="categories.html" class="btn btn-outline-white btn-lg">Browse All Categories</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="site-footer"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>

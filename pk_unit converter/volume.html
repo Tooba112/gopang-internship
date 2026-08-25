@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volume Converter – Liter, Gallon, ml, m³ | PK Unit Converter</title>
+  <meta name="description" content="Free volume converter. Convert between liters, milliliters, gallons, cubic meters and cubic feet instantly." />
+  <meta name="keywords" content="volume converter, liters to gallons, ml to liters, cubic meter converter" />
+  <link rel="canonical" href="volume.html" />
+  <meta property="og:title" content="Volume Converter – PK Unit Converter" />
+  <meta property="og:description" content="Convert volume between liters, gallons, milliliters, cubic meters and cubic feet." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Converters</a></li>
+      <li>Volume Converter</li>
+    </ol>
+  </div>
+</nav>
+<div class="page-header">
+  <div class="container">
+    <h1>Volume Converter</h1>
+    <p>Convert between liters, gallons, milliliters, cubic meters and more</p>
+  </div>
+</div>
+<div class="container">
+  <div class="converter-page-layout">
+    <main>
+      <div class="standalone-converter" id="standalone-volume">
+        <h2>Convert Volume</h2>
+        <div class="form-row">
+          <div class="form-group"><label for="vi-sv">Value to Convert</label><input type="number" id="vi-sv" class="conv-input" placeholder="Enter a number" /></div>
+          <div class="form-group"><label for="vf-sv">From Unit</label><select id="vf-sv" class="conv-from"></select></div>
+          <div class="form-group"><label for="vt-sv">To Unit</label><select id="vt-sv" class="conv-to"></select></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+      <div class="card" style="margin-top:32px;">
+        <h2 style="margin-bottom:16px;">Volume Units Reference</h2>
+        <div style="overflow-x:auto;">
+          <table class="unit-table">
+            <thead><tr><th>Unit</th><th>Symbol</th><th>Liters Equivalent</th></tr></thead>
+            <tbody>
+              <tr><td>Liter</td><td>L</td><td>1 L</td></tr>
+              <tr><td>Milliliter</td><td>mL</td><td>0.001 L</td></tr>
+              <tr><td>Gallon (US)</td><td>gal</td><td>3.78541 L</td></tr>
+              <tr><td>Cubic Meter</td><td>m³</td><td>1,000 L</td></tr>
+              <tr><td>Cubic Foot</td><td>ft³</td><td>28.3168 L</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="margin-top:24px;">
+        <h2>About Volume Conversion</h2>
+        <p>Volume measures the amount of three-dimensional space a substance occupies. It is one of the most frequently used measurements in cooking, science, engineering, and commerce. Different countries use different volume units, making conversion tools essential.</p>
+        <h3>The Metric Volume System</h3>
+        <p>The metric system uses the liter (L) as the primary unit of volume, with the milliliter (mL) being one-thousandth of a liter. The cubic meter (m³) is the SI base unit, equal to 1,000 liters. These units are used in scientific work, medicine, and most everyday contexts in Pakistan.</p>
+        <h3>The Imperial Volume System</h3>
+        <p>The US customary system uses fluid ounces, cups, pints, quarts, and gallons. The US gallon equals approximately 3.785 liters. These units appear in American recipes, beverage labeling, and fuel measurements in the United States.</p>
+        <h3>Common Volume Conversions</h3>
+        <ul>
+          <li>1 liter = 1,000 milliliters</li>
+          <li>1 US gallon = 3.78541 liters</li>
+          <li>1 cubic meter = 1,000 liters</li>
+          <li>1 cubic foot = 28.3168 liters</li>
+          <li>1 liter = 0.264172 US gallons</li>
+        </ul>
+      </div>
+    </main>
+    <aside class="converter-sidebar">
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="margin-bottom:14px;">Related Converters</h3>
+        <div class="related-grid" style="grid-template-columns:1fr;">
+          <a href="weight.html" class="related-link">⚖️ Weight</a>
+          <a href="length.html" class="related-link">📏 Length</a>
+          <a href="area.html" class="related-link">📐 Area</a>
+          <a href="temperature.html" class="related-link">🌡️ Temperature</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px;">Quick Facts</h3>
+        <ul style="display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:.9rem;color:var(--text-medium);">📌 1 US gallon = 3.785 liters</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">📌 Human blood volume ≈ 5 liters</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">📌 A standard bath = ~150 liters</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">📌 1 teaspoon ≈ 5 milliliters</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+<div id="site-footer"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Converter – Seconds, Minutes, Hours, Days | PK Unit Converter</title>
+  <meta name="description" content="Free time converter. Convert between seconds, minutes, hours, days and weeks accurately and instantly." />
+  <meta name="keywords" content="time converter, hours to minutes, seconds to hours, days to weeks, time units" />
+  <link rel="canonical" href="time.html" />
+  <meta property="og:title" content="Time Converter – PK Unit Converter" />
+  <meta property="og:description" content="Convert time between seconds, minutes, hours, days and weeks." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Converters</a></li>
+      <li>Time Converter</li>
+    </ol>
+  </div>
+</nav>
+<div class="page-header">
+  <div class="container">
+    <h1>Time Converter</h1>
+    <p>Convert between seconds, minutes, hours, days and weeks</p>
+  </div>
+</div>
+<div class="container">
+  <div class="converter-page-layout">
+    <main>
+      <div class="standalone-converter" id="standalone-time">
+        <h2>Convert Time</h2>
+        <div class="form-row">
+          <div class="form-group"><label for="tmi-st">Value to Convert</label><input type="number" id="tmi-st" class="conv-input" placeholder="Enter a number" /></div>
+          <div class="form-group"><label for="tmf-st">From Unit</label><select id="tmf-st" class="conv-from"></select></div>
+          <div class="form-group"><label for="tmt-st">To Unit</label><select id="tmt-st" class="conv-to"></select></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+      <div class="card" style="margin-top:32px;">
+        <h2 style="margin-bottom:16px;">Time Units Reference</h2>
+        <div style="overflow-x:auto;">
+          <table class="unit-table">
+            <thead><tr><th>Unit</th><th>Seconds Equivalent</th><th>Minutes Equivalent</th></tr></thead>
+            <tbody>
+              <tr><td>Second</td><td>1 s</td><td>0.01667 min</td></tr>
+              <tr><td>Minute</td><td>60 s</td><td>1 min</td></tr>
+              <tr><td>Hour</td><td>3,600 s</td><td>60 min</td></tr>
+              <tr><td>Day</td><td>86,400 s</td><td>1,440 min</td></tr>
+              <tr><td>Week</td><td>604,800 s</td><td>10,080 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="margin-top:24px;">
+        <h2>About Time Conversion</h2>
+        <p>Time is the most universally experienced measurement. Converting between time units is useful for project planning, scheduling, calculating durations, and understanding data rates. The second is the SI base unit of time, defined by the International Bureau of Weights and Measures.</p>
+        <h3>Common Time Conversions</h3>
+        <ul>
+          <li>1 minute = 60 seconds</li>
+          <li>1 hour = 60 minutes = 3,600 seconds</li>
+          <li>1 day = 24 hours = 1,440 minutes = 86,400 seconds</li>
+          <li>1 week = 7 days = 168 hours = 604,800 seconds</li>
+        </ul>
+        <h3>Practical Applications</h3>
+        <p>Time conversion is used in many everyday and professional scenarios. Software developers calculate processing times in milliseconds. Logistics professionals plan delivery routes in hours. Event planners schedule activities in minutes. Scientists work in nanoseconds and microseconds for precise measurements.</p>
+      </div>
+    </main>
+    <aside class="converter-sidebar">
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="margin-bottom:14px;">Related Converters</h3>
+        <div class="related-grid" style="grid-template-columns:1fr;">
+          <a href="speed.html" class="related-link">🚀 Speed</a>
+          <a href="data.html" class="related-link">💾 Data Storage</a>
+          <a href="length.html" class="related-link">📏 Length</a>
+          <a href="temperature.html" class="related-link">🌡️ Temperature</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px;">Fun Time Facts</h3>
+        <ul style="display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:.9rem;color:var(--text-medium);">⏱️ 1 year ≈ 31.5 million seconds</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">⏱️ Light travels 30 cm per nanosecond</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">⏱️ A blink of an eye ≈ 300-400 ms</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">⏱️ 1 day = 86,400 seconds</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+<div id="site-footer"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>
