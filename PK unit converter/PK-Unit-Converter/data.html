@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Storage Converter – Bytes, KB, MB, GB, TB | PK Unit Converter</title>
+  <meta name="description" content="Free data storage converter. Convert between bytes, kilobytes, megabytes, gigabytes and terabytes easily." />
+  <meta name="keywords" content="data converter, bytes to KB, MB to GB, gigabytes, terabytes, data storage" />
+  <link rel="canonical" href="data.html" />
+  <meta property="og:title" content="Data Storage Converter – PK Unit Converter" />
+  <meta property="og:description" content="Convert data storage units between bytes, KB, MB, GB and TB." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Converters</a></li>
+      <li>Data Storage Converter</li>
+    </ol>
+  </div>
+</nav>
+<div class="page-header">
+  <div class="container">
+    <h1>Data Storage Converter</h1>
+    <p>Convert between bytes, kilobytes, megabytes, gigabytes and terabytes</p>
+  </div>
+</div>
+<div class="container">
+  <div class="converter-page-layout">
+    <main>
+      <div class="standalone-converter" id="standalone-data">
+        <h2>Convert Data Storage</h2>
+        <div class="form-row">
+          <div class="form-group"><label for="di-sd">Value to Convert</label><input type="number" id="di-sd" class="conv-input" placeholder="Enter a number" /></div>
+          <div class="form-group"><label for="df-sd">From Unit</label><select id="df-sd" class="conv-from"></select></div>
+          <div class="form-group"><label for="dt-sd">To Unit</label><select id="dt-sd" class="conv-to"></select></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+      <div class="card" style="margin-top:32px;">
+        <h2 style="margin-bottom:16px;">Data Storage Units Reference</h2>
+        <div style="overflow-x:auto;">
+          <table class="unit-table">
+            <thead><tr><th>Unit</th><th>Symbol</th><th>Bytes Equivalent</th></tr></thead>
+            <tbody>
+              <tr><td>Byte</td><td>B</td><td>1 byte</td></tr>
+              <tr><td>Kilobyte</td><td>KB</td><td>1,024 bytes</td></tr>
+              <tr><td>Megabyte</td><td>MB</td><td>1,048,576 bytes</td></tr>
+              <tr><td>Gigabyte</td><td>GB</td><td>1,073,741,824 bytes</td></tr>
+              <tr><td>Terabyte</td><td>TB</td><td>1,099,511,627,776 bytes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="margin-top:24px;">
+        <h2>About Data Storage Conversion</h2>
+        <p>Data storage units measure the capacity of digital storage devices and the size of digital files. As technology advances, storage capacities have grown enormously, making it important to understand the relationship between different units.</p>
+        <h3>Binary vs Decimal Prefixes</h3>
+        <p>Data storage uses binary (powers of 2) prefixes. One kilobyte (KB) = 1,024 bytes (2¹⁰), one megabyte (MB) = 1,024 KB, one gigabyte (GB) = 1,024 MB, and one terabyte (TB) = 1,024 GB. This differs from the SI decimal system where kilo = 1,000.</p>
+        <h3>Common Data Sizes</h3>
+        <ul>
+          <li>A plain text email ≈ 2–5 KB</li>
+          <li>A high-quality photo ≈ 3–8 MB</li>
+          <li>A 3-minute MP3 song ≈ 3–5 MB</li>
+          <li>A full HD movie ≈ 4–8 GB</li>
+          <li>A modern game ≈ 20–100 GB</li>
+          <li>A home hard drive: 1–4 TB</li>
+        </ul>
+        <h3>Internet Speeds and Data</h3>
+        <p>Internet speeds are typically measured in megabits per second (Mbps), while storage is measured in megabytes. Note that 1 byte = 8 bits. To convert download times, divide file size in megabytes by speed in megabytes per second (Mbps ÷ 8).</p>
+      </div>
+    </main>
+    <aside class="converter-sidebar">
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="margin-bottom:14px;">Related Converters</h3>
+        <div class="related-grid" style="grid-template-columns:1fr;">
+          <a href="time.html" class="related-link">⏰ Time</a>
+          <a href="speed.html" class="related-link">🚀 Speed</a>
+          <a href="length.html" class="related-link">📏 Length</a>
+          <a href="weight.html" class="related-link">⚖️ Weight</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px;">Quick Facts</h3>
+        <ul style="display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:.9rem;color:var(--text-medium);">💾 1 KB = 1,024 bytes</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">💾 1 GB = 1,073,741,824 bytes</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">💾 A floppy disk held 1.44 MB</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">💾 The internet transfers ~5 exabytes/day</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+<div id="site-footer"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter – Celsius, Fahrenheit, Kelvin | PK Unit Converter</title>
+  <meta name="description" content="Free temperature converter. Convert between Celsius, Fahrenheit and Kelvin using accurate mathematical formulas." />
+  <meta name="keywords" content="temperature converter, celsius to fahrenheit, fahrenheit to celsius, kelvin converter" />
+  <link rel="canonical" href="temperature.html" />
+  <meta property="og:title" content="Temperature Converter – PK Unit Converter" />
+  <meta property="og:description" content="Convert temperatures between Celsius, Fahrenheit and Kelvin instantly." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Converters</a></li>
+      <li>Temperature Converter</li>
+    </ol>
+  </div>
+</nav>
+<div class="page-header">
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <p>Convert between Celsius, Fahrenheit and Kelvin scales</p>
+  </div>
+</div>
+<div class="container">
+  <div class="converter-page-layout">
+    <main>
+      <div class="standalone-converter" id="standalone-temperature">
+        <h2>Convert Temperature</h2>
+        <div class="form-row">
+          <div class="form-group"><label for="ti-st">Value to Convert</label><input type="number" id="ti-st" class="conv-input" placeholder="Enter temperature" /></div>
+          <div class="form-group"><label for="tf-st">From Scale</label><select id="tf-st" class="conv-from"></select></div>
+          <div class="form-group"><label for="tt-st">To Scale</label><select id="tt-st" class="conv-to"></select></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary conv-btn">Convert</button>
+          <button class="btn btn-secondary conv-reset">Reset</button>
+        </div>
+        <div class="result-box" role="status" aria-live="polite"><div class="result-value"></div><div class="result-label"></div><div class="result-formula"></div></div>
+        <div class="error-box" role="alert"></div>
+      </div>
+
+      <div class="card" style="margin-top:32px;">
+        <h2 style="margin-bottom:16px;">Temperature Conversion Formulas</h2>
+        <div style="overflow-x:auto;">
+          <table class="unit-table">
+            <thead><tr><th>From</th><th>To</th><th>Formula</th></tr></thead>
+            <tbody>
+              <tr><td>Celsius (°C)</td><td>Fahrenheit (°F)</td><td>°F = (°C × 9/5) + 32</td></tr>
+              <tr><td>Fahrenheit (°F)</td><td>Celsius (°C)</td><td>°C = (°F − 32) × 5/9</td></tr>
+              <tr><td>Celsius (°C)</td><td>Kelvin (K)</td><td>K = °C + 273.15</td></tr>
+              <tr><td>Kelvin (K)</td><td>Celsius (°C)</td><td>°C = K − 273.15</td></tr>
+              <tr><td>Fahrenheit (°F)</td><td>Kelvin (K)</td><td>K = (°F − 32) × 5/9 + 273.15</td></tr>
+              <tr><td>Kelvin (K)</td><td>Fahrenheit (°F)</td><td>°F = (K − 273.15) × 9/5 + 32</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:24px;">
+        <h2>About Temperature Scales</h2>
+        <p>Temperature is a measure of the thermal energy of matter. Three main scales are used worldwide: Celsius, Fahrenheit, and Kelvin. Each scale was developed at different times and is used in different contexts today.</p>
+        <h3>Celsius (°C)</h3>
+        <p>The Celsius scale, developed by Anders Celsius in 1742, is the most widely used temperature scale worldwide. Water freezes at 0°C and boils at 100°C at standard atmospheric pressure. Pakistan, like most countries, uses Celsius for everyday weather reports and daily temperature measurements.</p>
+        <h3>Fahrenheit (°F)</h3>
+        <p>Developed by Daniel Gabriel Fahrenheit in 1724, the Fahrenheit scale sets the freezing point of water at 32°F and boiling at 212°F. It is primarily used in the United States for everyday temperature reporting.</p>
+        <h3>Kelvin (K)</h3>
+        <p>The Kelvin scale is the SI unit of temperature and is used in scientific applications. Zero Kelvin (absolute zero) represents the theoretical lowest possible temperature — the point at which all molecular motion ceases. Water freezes at 273.15 K and boils at 373.15 K.</p>
+        <h3>Important Reference Points</h3>
+        <ul>
+          <li>Absolute zero: −273.15°C = −459.67°F = 0 K</li>
+          <li>Freezing point of water: 0°C = 32°F = 273.15 K</li>
+          <li>Boiling point of water: 100°C = 212°F = 373.15 K</li>
+          <li>Normal body temperature: 37°C = 98.6°F = 310.15 K</li>
+          <li>Room temperature: ~20–22°C = 68–72°F</li>
+        </ul>
+      </div>
+    </main>
+    <aside class="converter-sidebar">
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="margin-bottom:14px;">Related Converters</h3>
+        <div class="related-grid" style="grid-template-columns:1fr;">
+          <a href="length.html" class="related-link">📏 Length</a>
+          <a href="weight.html" class="related-link">⚖️ Weight</a>
+          <a href="speed.html" class="related-link">🚀 Speed</a>
+          <a href="area.html" class="related-link">📐 Area</a>
+          <a href="volume.html" class="related-link">🧪 Volume</a>
+        </div>
+      </div>
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="margin-bottom:12px;">Key Reference Points</h3>
+        <ul style="display:flex;flex-direction:column;gap:10px;">
+          <li style="font-size:.9rem;color:var(--text-medium);">🌡️ Body temp: 37°C / 98.6°F</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">❄️ Water freezes: 0°C / 32°F</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">♨️ Water boils: 100°C / 212°F</li>
+          <li style="font-size:.9rem;color:var(--text-medium);">🌡️ Comfortable: ~22°C / 72°F</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+<div id="site-footer"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="js/converter.js"></script>
+</body>
+</html>
